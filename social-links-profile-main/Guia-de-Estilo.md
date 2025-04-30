@@ -15,7 +15,7 @@ Os designs foram criados nas seguintes larguras:
 - Grey 700: hsl(0, 0%, 20%)
 - Grey 800: hsl(0, 0%, 12%)
 - Grey 900: hsl(0, 0%, 8%)
-
+#451160
 
 ### Body Copy
 
