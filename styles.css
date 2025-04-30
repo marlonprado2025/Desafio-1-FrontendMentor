@@ -33,10 +33,13 @@ img{
     object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
     margin-top: 40px;
     margin-bottom: 20px;
+    box-shadow: 0 0 5px #80079b;
+    animation: flutuar 3s ease-in-out infinite;
 }
 
 h2{
     color: rgb(217, 207, 207) ;
+    font-size: 28px;
 }
 h5{
     margin-top: 10px;
@@ -60,6 +63,7 @@ p{
     margin-bottom: 20px;
     text-decoration: none; /* Remove sublinhado do link */
     border-radius: 10px; /* Bordas arredondadas */
+    border: none;
     font-size: 20px; /* Tamanho da fonte */
     transition: background-color 0.5s;/* Suaviza mudança de cor no hover */
 }
@@ -67,15 +71,65 @@ p{
 .link-button:hover {
     background-color:#451160;/* Cor mais escura ao passar o mouse */
     opacity: 0.5;
+    transform: translateY(-5px) scale(1.1); /* Efeito de elevação */
+    box-shadow: 0 0 5px #80079b;
 }
 .link-button:active{
     background-color:#441160ad;
     opacity: 0.5;
 }
 
+.contato{
+    width: 60%;
+    padding: 1rem;
+    background: hsl(0, 0%, 20%);
+    color:white;
+    border-radius: 10px;
+    border: 1px solid var(--vidro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+#input-form{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: hsla(0, 1%, 34%, 0.224);
+    color: white;
+}
+textarea{
+    color: white;
+    background: hsla(0, 1%, 34%, 0.224);
+}
+
+botao-form{
+    color: var(--claro);
+    background: hsl(0, 0%, 20%);
+
+   /*minuto 1 hora e 03 segundos*/
+}
 .attribution { font-size: 11px; text-align: center;color: white; }
 .attribution a { color: hsl(229, 22%, 62%); }
 
+                             /*ANIMAÇÃO*/
+@keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+}
 
                /*RESPONSIVIDADE */
 @media(max-width:500px){
