@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 800px;
+    height: 900px;
     border-radius: 40px;
     box-shadow: 0 0 15px #80079b;
     z-index: 1;
@@ -79,7 +79,51 @@ p{
     opacity: 0.5;
 }
 
-.contato{
+section{
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 20%);
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    align-items: center;
+    color:white;
+    border-radius: 10px;
+    border: 1px solid var(--vidro);
+}
+.formulario-de-contato{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#input-form{
+    background: hsla(0, 1%, 34%, 0.224);
+    color: white;
+}
+textarea{
+ background: hsla(0, 1%, 34%, 0.224);
+ color: white;
+}
+.botao-form{
+    display:inline;
+    width: 80%;
+    height: auto;
+    padding: 10px 20px; /* Espaçamento interno */
+    background: #80079b;
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: none;
+    margin-top: 10px;
+    font-size: 15px; /* Tamanho da fonte */
+}
+.botao-form:hover {
+    background-color:#4f186c;/* Cor mais escura ao passar o mouse */
+    opacity: 0.5;
+    transform: translateY(-5px) scale(1.10; /* Efeito de elevação */
+}
+/*.contato{
     width: 60%;
     padding: 1rem;
     background: hsl(0, 0%, 20%);
@@ -117,7 +161,7 @@ botao-form{
     background: hsl(0, 0%, 20%);
 
    /*minuto 1 hora e 03 segundos*/
-}
+
 .attribution { font-size: 11px; text-align: center;color: white; }
 .attribution a { color: hsl(229, 22%, 62%); }
 
