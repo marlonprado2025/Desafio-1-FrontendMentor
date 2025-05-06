@@ -1,154 +1,139 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
-body{
-    background-color:hsl(0, 0%, 8%) ;
+body {
+    background-color: hsl(0, 0%, 8%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.container{
-    background:hsl(0, 0%, 12%) ;
+.container {
+    background: hsl(0, 0%, 12%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    height: 900px;
+    width: 400px;
+    height: 750px;
     border-radius: 40px;
     box-shadow: 0 0 15px #80079b;
     z-index: 1;
-    margin-top:50px ;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
-img{
-    width:180px; /* Tamanho da imagem */
-    height: 180px; /* Mesma medida para manter proporção */
-    border-radius: 50%; /* Transforma em círculo */
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+
+img {
+    width: 180px;
+    /* Tamanho da imagem */
+    height: 180px;
+    /* Mesma medida para manter proporção */
+    border-radius: 50%;
+    /* Transforma em círculo */
+    object-fit: cover;
+    /* Garante que a imagem preencha o círculo sem distorcer */
     margin-top: 40px;
     margin-bottom: 20px;
-    box-shadow: 0 0 5px #80079b;
+    box-shadow: 0 0 12px #80079b;
     animation: flutuar 3s ease-in-out infinite;
 }
 
-h2{
-    color: rgb(217, 207, 207) ;
+/*>>>>>>>> ANIMAÇÃO*/
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h2 {
+    color: rgb(217, 207, 207);
     font-size: 28px;
 }
-h5{
+
+h5 {
     margin-top: 10px;
     margin-bottom: 20px;
-    color:  #930ab1;
+    color: #930ab1;
 }
-p{
-    color: rgb(217, 207, 207) ;
+
+p {
+    color: rgb(217, 207, 207);
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 15px;
 }
 
-.link-button{
-    display: inline-block; /* Faz o link se comportar como um botão */
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color:hsl(0, 0%, 20%); /* Cor oficial do LinkedIn */
-    color: white; /* Cor do texto */
+.link-button {
+    display: inline-block;
+    /* Faz o link se comportar como um botão */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    background-color: hsl(0, 0%, 20%);
+    /* Cor oficial do LinkedIn */
+    color: white;
+    /* Cor do texto */
     width: 300px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
     margin-bottom: 20px;
-    text-decoration: none; /* Remove sublinhado do link */
-    border-radius: 10px; /* Bordas arredondadas */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    border-radius: 10px;
+    /* Bordas arredondadas */
     border: none;
-    font-size: 20px; /* Tamanho da fonte */
-    transition: background-color 0.5s;/* Suaviza mudança de cor no hover */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    transition: background-color 0.5s;
+    /* Suaviza mudança de cor no hover */
 }
 
 .link-button:hover {
-    background-color:#451160;/* Cor mais escura ao passar o mouse */
+    background-color: #80079b;
+    /* Cor mais escura ao passar o mouse */
     opacity: 0.5;
-    transform: translateY(-5px) scale(1.1); /* Efeito de elevação */
+    transform: translateY(-5px) scale(1.1);
+    /* Efeito de elevação */
     box-shadow: 0 0 5px #80079b;
 }
-.link-button:active{
-    background-color:#441160ad;
+
+.link-button:active {
+    background-color: #80079b;
     opacity: 0.5;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    background: hsl(0, 0%, 20%);
-    width: 60%;
-    height: auto;
-    padding: 15px;
-    align-items: center;
-    color:white;
-    border-radius: 10px;
-    border: 1px solid var(--vidro);
-}
-.formulario-de-contato{
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    margin-top: 10px;
-}
-#input-form{
-    background: hsla(0, 1%, 34%, 0.224);
-    color: white;
-}
-textarea{
- background: hsla(0, 1%, 34%, 0.224);
- color: white;
-}
-.botao-form{
-    display:inline;
-    width: 80%;
-    height: auto;
-    padding: 10px 20px; /* Espaçamento interno */
-    background: #80079b;
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    border-radius: 10px; /* Bordas arredondadas */
-    border: none;
-    margin-top: 10px;
-    font-size: 15px; /* Tamanho da fonte */
-}
-.botao-form:hover {
-    background-color:#4f186c;/* Cor mais escura ao passar o mouse */
-    opacity: 0.5;
-    transform: translateY(-5px) scale(1.10; /* Efeito de elevação */
-}
+    .attribution {
+        font-size: 11px; text-align: center; color: white;
+    }
 
-.attribution { font-size: 11px; text-align: center;color: white; }
-.attribution a { color: hsl(229, 22%, 62%); }
+    .attribution a {
+        color: hsl(229, 22%, 62%);
+    }
 
-                             /*ANIMAÇÃO*/
-@keyframes flutuar{
-    0%, 100%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-5px);
-    }
-}
 
-               /*RESPONSIVIDADE */
-@media(max-width:500px){
-    .container{
-        width: 300px;
-        height: 600px;
+    /*RESPONSIVIDADE */
+    @media(max-width:500px) {
+        .container {
+            width: 300px;
+            height: 600px;
+        }
+
+        .link-button {
+            width: 200px;
+            font-size: 15px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
     }
-    .link-button{
-        width: 200px;
-        font-size: 15px;
-    }
-    img{
-        width: 100px;
-        height: 100px;
-    }
-}
